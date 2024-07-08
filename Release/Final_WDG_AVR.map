@@ -1,0 +1,566 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./Lcd/lcd.o (__udivmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./led_mrg/LEDM.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./timer/timer.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+resetTimes          0xa               ./src/main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+LOAD ./timer/timer.o
+LOAD ./src/main.o
+LOAD ./led_mrg/LEDM.o
+LOAD ./gpio/GPIO.o
+LOAD ./buzzer/buzzer.o
+LOAD ./WDG_drv/WDGDRV.o
+LOAD ./WDGMrh/WDGM.o
+LOAD ./Lcd/lcd.o
+LOAD ./GICR/gcir.o
+LOAD ./Exti/Exti.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x9f6
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_19
+                0x000000a2                __vector_5
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_14
+                0x000000a2                __vector_10
+                0x000000a2                __vector_16
+                0x000000a2                __vector_18
+                0x000000a2                __vector_20
+ .text          0x000000a6        0x0 ./timer/timer.o
+ .text          0x000000a6        0x0 ./src/main.o
+ .text          0x000000a6        0x0 ./led_mrg/LEDM.o
+ .text          0x000000a6        0x0 ./gpio/GPIO.o
+ .text          0x000000a6        0x0 ./buzzer/buzzer.o
+ .text          0x000000a6        0x0 ./WDG_drv/WDGDRV.o
+ .text          0x000000a6        0x0 ./WDGMrh/WDGM.o
+ .text          0x000000a6        0x0 ./Lcd/lcd.o
+ .text          0x000000a6        0x0 ./GICR/gcir.o
+ .text          0x000000a6        0x0 ./Exti/Exti.o
+ .text          0x000000a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x000000a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x000000a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x000000a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000000a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.__vector_7
+                0x000000a6       0x66 ./timer/timer.o
+                0x000000a6                __vector_7
+ .text.__vector_11
+                0x0000010c       0x58 ./timer/timer.o
+                0x0000010c                __vector_11
+ .text.HAL_GetTick
+                0x00000164       0x2e ./timer/timer.o
+                0x00000164                HAL_GetTick
+ .text.timers_init
+                0x00000192       0x50 ./timer/timer.o
+                0x00000192                timers_init
+ .text.__vector_6
+                0x000001e2       0x5e ./src/main.o
+                0x000001e2                __vector_6
+ .text.main     0x00000240       0x92 ./src/main.o
+                0x00000240                main
+ .text.LEDM_Manage
+                0x000002d2       0x7a ./led_mrg/LEDM.o
+                0x000002d2                LEDM_Manage
+ .text.LEDM_Init
+                0x0000034c       0x24 ./led_mrg/LEDM.o
+                0x0000034c                LEDM_Init
+ .text.Gpio_ConfigPin
+                0x00000370       0x6e ./gpio/GPIO.o
+                0x00000370                Gpio_ConfigPin
+ .text.GPIO_Init
+                0x000003de       0x62 ./gpio/GPIO.o
+                0x000003de                GPIO_Init
+ .text.GPIO_Write
+                0x00000440       0x36 ./gpio/GPIO.o
+                0x00000440                GPIO_Write
+ .text.Gpio_ReadPin
+                0x00000476       0x20 ./gpio/GPIO.o
+                0x00000476                Gpio_ReadPin
+ .text.Gpio_TogglePin
+                0x00000496       0x16 ./gpio/GPIO.o
+                0x00000496                Gpio_TogglePin
+ .text.Gpio_DisablePins
+                0x000004ac        0x6 ./gpio/GPIO.o
+                0x000004ac                Gpio_DisablePins
+ .text.Buzzer_Toggle
+                0x000004b2        0xa ./buzzer/buzzer.o
+                0x000004b2                Buzzer_Toggle
+ .text.Buzzer_Off
+                0x000004bc        0xa ./buzzer/buzzer.o
+                0x000004bc                Buzzer_Off
+ .text.Buzzer_On
+                0x000004c6        0xa ./buzzer/buzzer.o
+                0x000004c6                Buzzer_On
+ .text.Buzzer_Init
+                0x000004d0        0xe ./buzzer/buzzer.o
+                0x000004d0                Buzzer_Init
+ .text.enable_global_interrupt
+                0x000004de        0x8 ./WDG_drv/WDGDRV.o
+                0x000004de                enable_global_interrupt
+ .text.disable_global_interrupt
+                0x000004e6        0x8 ./WDG_drv/WDGDRV.o
+                0x000004e6                disable_global_interrupt
+ .text.WDGDrv_Disable
+                0x000004ee       0x12 ./WDG_drv/WDGDRV.o
+                0x000004ee                WDGDrv_Disable
+ .text.WDGDrv_IsrNotification
+                0x00000500       0x2c ./WDG_drv/WDGDRV.o
+                0x00000500                WDGDrv_IsrNotification
+ .text.WDGDrv_Init
+                0x0000052c       0x38 ./WDG_drv/WDGDRV.o
+                0x0000052c                WDGDrv_Init
+ .text.WDGM_ProvideSupervisionStatus
+                0x00000564        0x6 ./WDGMrh/WDGM.o
+                0x00000564                WDGM_ProvideSupervisionStatus
+ .text.WDGM_AlivenessIndication
+                0x0000056a       0x14 ./WDGMrh/WDGM.o
+                0x0000056a                WDGM_AlivenessIndication
+ .text.WDGM_MainFunction
+                0x0000057e       0x98 ./WDGMrh/WDGM.o
+                0x0000057e                WDGM_MainFunction
+ .text.WDGM_Init
+                0x00000616       0x1e ./WDGMrh/WDGM.o
+                0x00000616                WDGM_Init
+ .text.LCD_Command
+                0x00000634       0x24 ./Lcd/lcd.o
+                0x00000634                LCD_Command
+ .text.LCD_Char
+                0x00000658       0x24 ./Lcd/lcd.o
+                0x00000658                LCD_Char
+ .text.LCD_String
+                0x0000067c       0x18 ./Lcd/lcd.o
+                0x0000067c                LCD_String
+ .text.LCD_String_xy
+                0x00000694       0x34 ./Lcd/lcd.o
+                0x00000694                LCD_String_xy
+ .text.LCD_Clear
+                0x000006c8        0xe ./Lcd/lcd.o
+                0x000006c8                LCD_Clear
+ .text.LCD_Init
+                0x000006d6       0x28 ./Lcd/lcd.o
+                0x000006d6                LCD_Init
+ .text.reverse  0x000006fe       0x26 ./Lcd/lcd.o
+                0x000006fe                reverse
+ .text.utoa     0x00000724       0x70 ./Lcd/lcd.o
+                0x00000724                utoa
+ .text.Gicr_Init
+                0x00000794       0x86 ./GICR/gcir.o
+                0x00000794                Gicr_Init
+ .text.Gicr_EnableInterrupt
+                0x0000081a       0x10 ./GICR/gcir.o
+                0x0000081a                Gicr_EnableInterrupt
+ .text.Gicr_DisableInterrupt
+                0x0000082a       0x10 ./GICR/gcir.o
+                0x0000082a                Gicr_DisableInterrupt
+ .text.Gicr_ClearInterruptFlag
+                0x0000083a       0x10 ./GICR/gcir.o
+                0x0000083a                Gicr_ClearInterruptFlag
+ .text.Gicr_IsInterruptActive
+                0x0000084a       0x1e ./GICR/gcir.o
+                0x0000084a                Gicr_IsInterruptActive
+ .text.Exti_Init
+                0x00000868       0x82 ./Exti/Exti.o
+                0x00000868                Exti_Init
+ .text.EXTI_Enable
+                0x000008ea       0x10 ./Exti/Exti.o
+                0x000008ea                EXTI_Enable
+ .text.EXTI_Disable
+                0x000008fa       0x10 ./Exti/Exti.o
+                0x000008fa                EXTI_Disable
+ .text.Exti_Deinit
+                0x0000090a        0x6 ./Exti/Exti.o
+                0x0000090a                Exti_Deinit
+ .text.EXTI_RegisterCallback
+                0x00000910       0x16 ./Exti/Exti.o
+                0x00000910                EXTI_RegisterCallback
+ .text.__vector_1
+                0x00000926       0x52 ./Exti/Exti.o
+                0x00000926                __vector_1
+ .text.__vector_2
+                0x00000978       0x52 ./Exti/Exti.o
+                0x00000978                __vector_2
+ .text.libgcc   0x000009ca       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x000009ca                __udivmodhi4
+ .text.libgcc   0x000009f2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000009f2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000009f2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000009f2                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000009f2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000009f2                exit
+                0x000009f2                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000009f2        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000009f6                _etext = .
+
+.data           0x00800100        0x2 load address 0x000009f6
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .data          0x00800100        0x0 ./timer/timer.o
+ .data          0x00800100        0x0 ./src/main.o
+ .data          0x00800100        0x0 ./led_mrg/LEDM.o
+ .data          0x00800100        0x0 ./gpio/GPIO.o
+ .data          0x00800100        0x0 ./buzzer/buzzer.o
+ .data          0x00800100        0x0 ./WDG_drv/WDGDRV.o
+ .data          0x00800100        0x0 ./WDGMrh/WDGM.o
+ .data          0x00800100        0x0 ./Lcd/lcd.o
+ .data          0x00800100        0x0 ./GICR/gcir.o
+ .data          0x00800100        0x0 ./Exti/Exti.o
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.togglingState
+                0x00800100        0x1 ./led_mrg/LEDM.o
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800102                . = ALIGN (0x2)
+ *fill*         0x00800101        0x1 00
+                0x00800102                _edata = .
+                0x00800102                PROVIDE (__data_end, .)
+
+.bss            0x00800102       0x21
+                0x00800102                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800102        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .bss           0x00800102        0x0 ./timer/timer.o
+ .bss           0x00800102        0x0 ./src/main.o
+ .bss           0x00800102        0x0 ./led_mrg/LEDM.o
+ .bss           0x00800102        0x0 ./gpio/GPIO.o
+ .bss           0x00800102        0x0 ./buzzer/buzzer.o
+ .bss           0x00800102        0x0 ./WDG_drv/WDGDRV.o
+ .bss           0x00800102        0x0 ./WDGMrh/WDGM.o
+ .bss           0x00800102        0x0 ./Lcd/lcd.o
+ .bss           0x00800102        0x0 ./GICR/gcir.o
+ .bss           0x00800102        0x0 ./Exti/Exti.o
+ .bss           0x00800102        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800102        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800102        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800102        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.millis    0x00800102        0x2 ./timer/timer.o
+                0x00800102                millis
+ .bss.resets    0x00800104        0x1 ./src/main.o
+                0x00800104                resets
+ .bss.checkLedTime
+                0x00800105        0x2 ./src/main.o
+ .bss.checkWDGTime
+                0x00800107        0x2 ./src/main.o
+ .bss.timeToggle
+                0x00800109        0x4 ./led_mrg/LEDM.o
+ .bss.WDGM_MainFunction_Stuck
+                0x0080010d        0x1 ./WDGMrh/WDGM.o
+                0x0080010d                WDGM_MainFunction_Stuck
+ .bss.WDGM_LEDM_Alive
+                0x0080010e        0x1 ./WDGMrh/WDGM.o
+                0x0080010e                WDGM_LEDM_Alive
+ .bss.status    0x0080010f        0x1 ./WDGMrh/WDGM.o
+                0x0080010f                status
+ .bss.providedStatus
+                0x00800110        0x1 ./WDGMrh/WDGM.o
+                0x00800110                providedStatus
+ .bss.WDGM_LEDM_CallCount
+                0x00800111        0x2 ./WDGMrh/WDGM.o
+ .bss.last_time_checked
+                0x00800113        0x2 ./WDGMrh/WDGM.o
+ .bss.EXTI_Callbacks
+                0x00800115        0x4 ./Exti/Exti.o
+                0x00800115                EXTI_Callbacks
+ *(COMMON)
+ COMMON         0x00800119        0xa ./src/main.o
+                0x00800119                resetTimes
+                0x00800123                PROVIDE (__bss_end, .)
+                0x000009f6                __data_load_start = LOADADDR (.data)
+                0x000009f8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800123        0x0
+                0x00800123                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800123                PROVIDE (__noinit_end, .)
+                0x00800123                _end = .
+                0x00800123                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Final_WDG_AVR.elf elf32-avr)
+LOAD linker stubs
